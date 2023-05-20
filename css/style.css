@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #e7c6ff;
+    color: white;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    margin-top: 20px;
+}
+
+.div_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.img_logo {
+    border-radius: 50%;
+}
+
+.img_iconos {
+    border-radius: 50%;
+    width: 20px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+nav button {
+    border: none;
+    width: 95px;
+    height: 35px;
+    font-size: 24px;
+}
+
+.h1 {
+    display: flex;
+    width: 25%;
+    align-items: center;
+}
+
+.h2_shop {
+    text-align: center;
+}
+
+.h2_subs {
+    text-align: center;
+}
+
+.main_subs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.div_adicionales_shop {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+nav.navSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.main_index {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_shop {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "opciones productos"
+}
+
+.opciones_shop {
+    grid-area: opciones;
+}
+
+.productos_shop {
+    grid-area: productos;
+}
+
+.h2_shop {
+    text-align: center;
+}
+
+.card {
+    width: 33%;
+}
+
+.opciones_shop {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.productos_shop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 5%;
+    column-gap: 5%;
+    row-gap: 50px;
+}
+
+.card {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    height: 10hv;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_subs {
+    display: flex;
+    height: 100%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    row-gap: 15px;
+}
+
+.form-control {
+    border: solid;
+    border-radius: 5px;
+}
+
+.main_news {
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+    padding: 10%;
+}
+
+.div_notice1 {
+    display: flex;
+    height: 33%;
+    width: 100%;
+    column-gap: 10%;
+}
+
+.div_img_news {
+    display: flex;
+    justify-content: center;
+}
+
+.div_notice2 {
+    display: flex;
+    height: 33%;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 10%;
+}
+
+.img_notice {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.main_bag {
+    display: grid;
+    grid-template-areas: 
+        "productos resumen"
+        "adicionales adicionales";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    padding-top: 5%;
+    row-gap: 100px;
+}
+
+.div_productos{
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10%;
+    justify-content: center;
+    padding: 5%;
+}
+
+.producto_bag{
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+.item{
+    display: flex;
+    border: solid;
+}
+
+.div_img_producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.div_descripcion_producto{
+    display: flex;
+    flex-direction: column;
+    padding: .5%;
+    width: 70%;
+}
+
+.div_total_producto{
+    display: flex;
+    align-items: center;
+    column-gap: 50%;
+    width: 20%;
+}
+
+.div_resumen{
+    display: flex;
+    flex-direction: column;
+    grid-area: resumen;
+    justify-content: center;
+    border: solid;
+    row-gap: 10px;
+    height: 100%;
+    padding: 5%;
+}
+
+.div_resumen_producto{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div_adicionales{
+    display: flex;
+    grid-area: adicionales;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
