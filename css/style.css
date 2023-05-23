@@ -43,7 +43,7 @@ nav button {
     font-size: 24px;
 }
 
-.h1 {
+.titulo{
     display: flex;
     width: 25%;
     align-items: center;
@@ -189,7 +189,7 @@ footer {
 
 .main_bag {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "productos resumen"
         "adicionales adicionales";
     grid-template-columns: 70% 30%;
@@ -198,7 +198,7 @@ footer {
     row-gap: 100px;
 }
 
-.div_productos{
+.div_productos {
     grid-area: productos;
     display: flex;
     flex-direction: column;
@@ -207,39 +207,39 @@ footer {
     padding: 5%;
 }
 
-.producto_bag{
+.producto_bag {
     width: 80px;
     height: 80px;
     border-radius: 10%;
 }
 
-.item{
+.item {
     display: flex;
     border: solid;
 }
 
-.div_img_producto{
+.div_img_producto {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 10%;
 }
 
-.div_descripcion_producto{
+.div_descripcion_producto {
     display: flex;
     flex-direction: column;
     padding: .5%;
     width: 70%;
 }
 
-.div_total_producto{
+.div_total_producto {
     display: flex;
     align-items: center;
     column-gap: 50%;
     width: 20%;
 }
 
-.div_resumen{
+.div_resumen {
     display: flex;
     flex-direction: column;
     grid-area: resumen;
@@ -250,17 +250,103 @@ footer {
     padding: 5%;
 }
 
-.div_resumen_producto{
+.div_resumen_producto {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.div_adicionales{
-    display: flex;
+.div_adicionales {
     grid-area: adicionales;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5%;
 }
 
+@media screen and (max-width: 320px) {
+    header {
+        display: grid;
+        grid-template-areas: 
+            "div_logo barra_de_navegacion"
+            "titulo titulo"
+            "nav_search nav_search";
+        grid-template-columns: 33%;
+        height: 66%;
+        
+    }
+
+    .div_logo {
+        grid-area: div_logo;
+        justify-content: left;
+        padding-left: 15%;
+    }
+
+    .img_logo {
+        width: 100px;
+    }
+
+    .barra_de_navegacion{
+        grid-area: barra_de_navegacion;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .barra_de_navegacion button{
+        font-size: 20px;
+    }
+
+    .titulo{
+        grid-area: titulo;
+        justify-self: self-start;
+        padding: 5%
+    }
+
+
+    .main_news {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .img_notice {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .productos_shop .card{
+        width: 55%;
+
+    }
+
+    .productos_shop{
+        justify-content: center;
+    }
+
+    .nav_search{
+        grid-area: nav_search;
+        display: none;
+    }
+
+    .opciones_shop{
+        width: 100%;
+        font-size: 66%;
+    }
+
+    .h2_shop{
+        font-size: 15px;
+    }
+
+    .opciones_shop .card{
+        width: 100%;
+        font-size: 66%;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    
+    
+}
