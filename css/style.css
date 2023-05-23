@@ -301,7 +301,7 @@ a{
     padding: 5%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     header {
         display: grid;
         grid-template-areas: 
