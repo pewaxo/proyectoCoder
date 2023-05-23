@@ -20,6 +20,15 @@ header {
     width: 10%;
 }
 
+.barra_de_navegacion{
+    display: flex;
+    width: 30%;
+}
+
+.nav_search{
+    display: flex;
+}
+
 .img_logo {
     border-radius: 50%;
 }
@@ -29,6 +38,10 @@ header {
     width: 20px;
 }
 
+.img_iconos_bag{
+    width: 20px;
+    border-radius: 20%;
+}
 
 nav {
     display: flex;
@@ -43,10 +56,29 @@ nav button {
     font-size: 24px;
 }
 
+
+
 .titulo{
     display: flex;
     width: 25%;
     align-items: center;
+}
+
+.form-control{
+    width: 250px;
+    height: 25px;
+    align-self: center;
+    text-align: center;
+    background-color: #e7c6ff;
+    border: solid white;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border: solid;
+    color: white;
+    background-color: #e7c6ff;
 }
 
 .h2_shop {
@@ -103,6 +135,7 @@ nav.navSearch {
 
 .card {
     width: 33%;
+    border: none;
 }
 
 .opciones_shop {
@@ -148,6 +181,10 @@ footer {
     flex-direction: column;
     width: 33%;
     row-gap: 15px;
+}
+
+a{
+    color: white;
 }
 
 .form-control {
@@ -308,6 +345,14 @@ footer {
         display: flex;
         height: 50%;
         flex-direction: column;
+        row-gap: 20px;
+        padding: 5%;
+    }
+
+    .div_adicionales_shop .card .btn{
+        width: 50px;
+        text-justify: auto;
+        font-size: 7px;
     }
 
     .img_notice {
@@ -324,8 +369,11 @@ footer {
         justify-content: center;
     }
 
-    .nav_search{
-        grid-area: nav_search;
+    .form-control{
+        display: none;
+    }
+
+    #btn{
         display: none;
     }
 
@@ -343,10 +391,15 @@ footer {
         font-size: 66%;
         padding: 5%;
     }
+    
+    .main_bag{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 600px) {
 
-    
+
     
 }
