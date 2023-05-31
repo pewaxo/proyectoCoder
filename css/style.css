@@ -139,6 +139,9 @@ footer {
   border: solid;
   height: 35px;
 }
+.main_shop img {
+  border-radius: 20%;
+}
 .main_shop_productos_shop {
   display: flex;
   flex-wrap: wrap;
