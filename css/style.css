@@ -17,6 +17,12 @@ header {
   height: 33%;
   row-gap: 10px;
 }
+header_main_index {
+  display: flex;
+  height: 73%;
+  text-align: center;
+  padding: 50% 5% 60% 5%;
+}
 header .div_logo {
   grid-area: logo;
   display: flex;
@@ -191,6 +197,73 @@ footer {
 .main_news_div_notice_img_notice {
   width: 250px;
   border-radius: 5%;
+}
+
+.main_bag {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  row-gap: 10px;
+}
+.main_bag_div_item {
+  display: grid;
+  grid-template-areas: "imagen descripcion total";
+  grid-template-columns: 20% 60% 20%;
+}
+.main_bag_div_item_img {
+  grid-area: imagen;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.main_bag_div_item_descripcion {
+  grid-area: descripcion;
+  display: block;
+  font-size: 15px;
+}
+.main_bag_div_item_total {
+  grid-area: total;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main_bag_div_item_total button {
+  border: none;
+}
+.main_bag_div_resumen {
+  padding-bottom: 10%;
+}
+.main_bag_div_resumen h2 {
+  text-align: center;
+}
+.main_bag_div_resumen_cantidad {
+  display: flex;
+  justify-content: space-between;
+}
+.main_bag_div_resumen_envio {
+  display: flex;
+  justify-content: space-between;
+}
+.main_bag_div_resumen_total {
+  display: flex;
+  justify-content: space-around;
+}
+.main_bag_div_resumen_total button {
+  border: groove;
+}
+.main_bag div img {
+  width: 90%;
+  border-radius: 20%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.carousel-item img {
+  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

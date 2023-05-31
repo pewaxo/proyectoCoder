@@ -21,6 +21,13 @@ header {
     height: 33%;
     row-gap: 10px;
 
+    &_main_index {
+        display: flex;
+        height: 73%;
+        text-align: center;
+        padding: 50% 5% 60% 5%;
+    }
+
     .div_logo {
         grid-area: logo;
         display: flex;
@@ -199,8 +206,8 @@ footer {
     font-size: 20px;
     justify-content: space-around;
 
-    button{
-        background-color:#e7c6ff;
+    button {
+        background-color: #e7c6ff;
         font-size: 15px;
         padding: 1%;
         border: solid;
@@ -224,4 +231,86 @@ footer {
             border-radius: 5%;
         }
     }
+}
+
+//bag.html
+.main_bag {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    row-gap: 10px;
+
+
+    &_div_item {
+        display: grid;
+        grid-template-areas:
+            "imagen descripcion total";
+
+        grid-template-columns: 20% 60% 20%;
+
+        &_img {
+            grid-area: imagen;
+            display: flex;
+            justify-content: center;
+            padding: 5%;
+        }
+
+        &_descripcion {
+            grid-area: descripcion;
+            display: block;
+            font-size: 15px;
+        }
+
+        &_total {
+            grid-area: total;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                border: none;
+            }
+        }
+    }
+
+    &_div_resumen{
+        padding-bottom: 10%;
+        h2{
+            text-align: center;
+        }
+
+        &_cantidad{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_envio{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_total{
+            display: flex;
+            justify-content: space-around;
+
+            button{
+                border: groove;
+            }
+        }
+    }    
+    
+    div img {
+        width: 90%;
+        border-radius: 20%;
+    }    
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.carousel-item img{
+    height: 200px;
 }
