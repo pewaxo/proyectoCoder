@@ -32,7 +32,7 @@ header .div_logo_img {
 header .barra_de_navegacion {
   grid-area: navegacion;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 header .barra_de_navegacion_btn_header {
@@ -147,6 +147,20 @@ footer {
   display: flex;
   font-size: 20px;
   justify-content: space-around;
+}
+
+.main_news {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  row-gap: 10px;
+}
+.main_news_div_notice {
+  display: block;
+}
+.main_news_div_notice_img_notice {
+  width: 430px;
+  border-radius: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
