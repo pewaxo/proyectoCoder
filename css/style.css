@@ -38,7 +38,7 @@ header .barra_de_navegacion {
 header .barra_de_navegacion_btn_header {
   border: none;
   width: 30%;
-  font-size: 20px;
+  font-size: 17px;
 }
 header .titulo {
   grid-area: titulo;
@@ -52,22 +52,32 @@ header .buscador_redes {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 header .buscador_redes_input {
   width: 150px;
-  height: 30px;
+  height: 25px;
   text-align: center;
   background-color: #e7c6ff;
-  border: solid white;
+  border-style: groove;
+  font-size: 15;
 }
 header .buscador_redes_img {
-  width: 30px;
+  width: 25px;
+  border-radius: 10%;
+}
+header .buscador_redes button {
+  display: flex;
+  align-items: center;
+  background-color: #e7c6ff;
+  border: none;
   border-radius: 50%;
 }
+header .buscador_redes button img {
+  width: 20px;
+}
 header .btn {
-  height: 30px;
-  text-align: center;
+  height: 25px;
 }
 
 a {
@@ -118,16 +128,28 @@ footer {
   text-align: center;
   font-size: 15px;
 }
+.main_shop_opciones_shop_div_adicionales_shop_card a {
+  background-color: #e7c6ff;
+  border: solid;
+  height: 35px;
+}
 .main_shop_productos_shop {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 5%;
-  row-gap: 10px;
+  row-gap: 20px;
   column-gap: 10px;
 }
 .main_shop_productos_shop_card {
   width: 100px;
+  align-items: center;
+  text-align: center;
+}
+.main_shop_productos_shop_card a {
+  background-color: #e7c6ff;
+  border: solid;
+  height: 35px;
 }
 
 .main_subs {
@@ -148,6 +170,14 @@ footer {
   font-size: 20px;
   justify-content: space-around;
 }
+.col-12 button {
+  background-color: #e7c6ff;
+  font-size: 15px;
+  padding: 1%;
+  border: solid;
+  border-radius: 10%;
+  width: 65px;
+}
 
 .main_news {
   display: flex;
@@ -159,7 +189,7 @@ footer {
   display: block;
 }
 .main_news_div_notice_img_notice {
-  width: 430px;
+  width: 400px;
   border-radius: 5%;
 }
 
