@@ -17,72 +17,68 @@ header {
   height: 33%;
   row-gap: 10px;
 }
-
-a {
-  color: white;
-}
-
-.div_logo {
+header .div_logo {
   grid-area: logo;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.div_logo_img {
+header .div_logo_img {
   border-radius: 20%;
   width: 100%;
   height: 85px;
 }
-
-.barra_de_navegacion {
+header .barra_de_navegacion {
   grid-area: navegacion;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
-.barra_de_navegacion_btn_header {
+header .barra_de_navegacion_btn_header {
   border: none;
   width: 30%;
   font-size: 20px;
 }
-
-.titulo {
+header .titulo {
   grid-area: titulo;
   display: flex;
   justify-content: center;
   align-self: center;
   width: 100%;
 }
-
-.buscador_redes {
+header .buscador_redes {
   grid-area: buscador;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
 }
-.buscador_redes_input {
+header .buscador_redes_input {
   width: 150px;
   height: 30px;
   text-align: center;
   background-color: #e7c6ff;
   border: solid white;
 }
-.buscador_redes_img {
+header .buscador_redes_img {
   width: 30px;
+  border-radius: 50%;
 }
-
-.btn {
+header .btn {
   height: 30px;
   text-align: center;
+}
+
+a {
+  color: white;
 }
 
 .main_index {
   display: flex;
   height: 73%;
   text-align: center;
-  padding: 15% 2% 18% 2%;
+  padding: 50% 5% 60% 5%;
 }
 
 footer {
@@ -132,6 +128,25 @@ footer {
 }
 .main_shop_productos_shop_card {
   width: 100px;
+}
+
+.main_subs {
+  display: flex;
+  flex-direction: column;
+  padding: 15% 5% 17% 5%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form-control {
+  text-align: center;
+  height: 30px;
+}
+
+.col-12 {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
