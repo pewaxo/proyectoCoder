@@ -277,6 +277,14 @@ footer {
         }
     }
 
+    .carousel{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
     &_div_resumen{
         padding-bottom: 10%;
         h2{
@@ -298,7 +306,14 @@ footer {
             justify-content: space-around;
 
             button{
-                border: groove;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 5%;
+                border: none;
+                border-radius: 0;
+                font-size: 70%;
+                justify-content: center;
             }
         }
     }    
@@ -319,9 +334,229 @@ footer {
     height: 200px;
 }
 
-//Media - Desktop
+//Media - Desktop min - 1024px
 @media screen and (min-width: 1024px) {
     header{
         display: flex;
+        padding: 2%;
+        column-gap: 1%;
+        justify-content: space-between;
+
+        .div_logo{
+            display: flex;
+            width: 30%;
+            justify-content: center;
+
+            &_img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .barra_de_navegacion{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 1%;
+
+            button{
+                font-size: 120%;
+            }
+        }
+
+        .titulo h1{
+            text-align: center;
+            font-size: 200%;
+        }
+
+        .buscador_redes{
+            display: flex;
+            align-items: center;
+
+            &_input{
+                height: 20%;
+                font-size: 80%;
+            }
+
+            &_img{
+                height: 18px;
+                width: 18px;
+
+            }
+        }
     }
+
+    //index.html | Desktop min - 1024px
+    .main_index{
+        display: flex;
+        justify-content: center;
+        padding: 25% 2% 35% 2%;
+        font-size: 110%;
+    }
+
+    //shop.html | Desktop min - 1024px
+    .main_shop{
+        display: flex;
+        padding: 2%;
+        column-gap: 5%;
+
+
+        &_opciones_shop{
+            display: flex;
+            padding: 0;
+
+            &_criterios{
+                padding: 0;
+                h2{
+                    font-size: 120%;
+                }
+            }
+
+            div li{justify-content: center;
+                font-size: 95%;
+            }
+
+            &_div_adicionales_shop{
+                display: flex;
+                padding: 0;
+            }
+        }
+
+        &_productos_shop{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 2%;
+            row-gap: 35px;
+            padding: 0;
+
+            
+            &_card{
+                width: 150px;
+
+                img{
+                    height: 125px;
+                }
+            }
+        }
+    }
+
+    //subscribe.html | Desktop min - 1024px
+    .main_subs{
+        display: flex;
+        padding: 10% 15% 7.5% 15%;
+        row-gap: 10px;
+        font-size: 160%;
+    }
+
+    //news.html | Desktop min - 1024px
+    .main_news{
+        display: flex;
+        padding: 2%;
+
+        &_div_notice{
+            display: flex;
+            padding: 0;
+            column-gap: 2%;
+
+            section{
+                padding: 5%;
+            }
+            
+            h2{
+                font-size: 200%;
+            }
+
+            p{
+                font-size: 95%;
+            }
+
+            &_img_notice{
+                display: flex;
+                align-self: center;
+                padding: 2%;
+                width: 45%;
+                height: 45%;
+                border-radius: 20%;
+            }
+        }
+    }
+
+    //bag.html | Desktop min - 1024px
+    .main_bag{
+        display: flex;
+        padding: 0;
+        row-gap: 0;
+
+        &_div_item{
+            display: flex;
+            column-gap: 2%;
+            padding: 2%;
+            height: 150px;
+
+            &_div_img{
+                display: flex;
+                padding: 0;
+                width: 10%;                
+            }
+
+            &_descripcion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 70%;
+            }
+
+            &_total{
+                display: flex;
+                align-items: center;
+                width: 20%;
+            }
+        }
+
+        &_div_resumen{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            &_cantidad{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &_envio{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &_total{
+                display: flex;
+                justify-content: space-around;
+
+                button{
+                    width: 5%;
+                    border: none;
+                    border-radius: 0;
+                    font-size: 70%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .carousel{
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+        }
+
+        .carousel-inner{
+            width: 50%;
+        }
+
+    }
+
+
+
+
+
+    
+
 }

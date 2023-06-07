@@ -233,6 +233,13 @@ footer {
 .main_bag_div_item_total button {
   border: none;
 }
+.main_bag .carousel {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
 .main_bag_div_resumen {
   padding-bottom: 10%;
 }
@@ -252,7 +259,14 @@ footer {
   justify-content: space-around;
 }
 .main_bag_div_resumen_total button {
-  border: groove;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5%;
+  border: none;
+  border-radius: 0;
+  font-size: 70%;
+  justify-content: center;
 }
 .main_bag div img {
   width: 90%;
@@ -267,6 +281,181 @@ footer {
 
 .carousel-item img {
   height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    padding: 2%;
+    column-gap: 1%;
+    justify-content: space-between;
+  }
+  header .div_logo {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+  }
+  header .div_logo_img {
+    width: 100px;
+    height: 100px;
+  }
+  header .barra_de_navegacion {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1%;
+  }
+  header .barra_de_navegacion button {
+    font-size: 120%;
+  }
+  header .titulo h1 {
+    text-align: center;
+    font-size: 200%;
+  }
+  header .buscador_redes {
+    display: flex;
+    align-items: center;
+  }
+  header .buscador_redes_input {
+    height: 20%;
+    font-size: 80%;
+  }
+  header .buscador_redes_img {
+    height: 18px;
+    width: 18px;
+  }
+  .main_index {
+    display: flex;
+    justify-content: center;
+    padding: 25% 2% 35% 2%;
+    font-size: 110%;
+  }
+  .main_shop {
+    display: flex;
+    padding: 2%;
+    column-gap: 5%;
+  }
+  .main_shop_opciones_shop {
+    display: flex;
+    padding: 0;
+  }
+  .main_shop_opciones_shop_criterios {
+    padding: 0;
+  }
+  .main_shop_opciones_shop_criterios h2 {
+    font-size: 120%;
+  }
+  .main_shop_opciones_shop div li {
+    justify-content: center;
+    font-size: 95%;
+  }
+  .main_shop_opciones_shop_div_adicionales_shop {
+    display: flex;
+    padding: 0;
+  }
+  .main_shop_productos_shop {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 35px;
+    padding: 0;
+  }
+  .main_shop_productos_shop_card {
+    width: 150px;
+  }
+  .main_shop_productos_shop_card img {
+    height: 125px;
+  }
+  .main_subs {
+    display: flex;
+    padding: 10% 15% 7.5% 15%;
+    row-gap: 10px;
+    font-size: 160%;
+  }
+  .main_news {
+    display: flex;
+    padding: 2%;
+  }
+  .main_news_div_notice {
+    display: flex;
+    padding: 0;
+    column-gap: 2%;
+  }
+  .main_news_div_notice section {
+    padding: 5%;
+  }
+  .main_news_div_notice h2 {
+    font-size: 200%;
+  }
+  .main_news_div_notice p {
+    font-size: 95%;
+  }
+  .main_news_div_notice_img_notice {
+    display: flex;
+    align-self: center;
+    padding: 2%;
+    width: 45%;
+    height: 45%;
+    border-radius: 20%;
+  }
+  .main_bag {
+    display: flex;
+    padding: 0;
+    row-gap: 0;
+  }
+  .main_bag_div_item {
+    display: flex;
+    column-gap: 2%;
+    padding: 2%;
+    height: 150px;
+  }
+  .main_bag_div_item_div_img {
+    display: flex;
+    padding: 0;
+    width: 10%;
+  }
+  .main_bag_div_item_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+  .main_bag_div_item_total {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  .main_bag_div_resumen {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .main_bag_div_resumen_cantidad {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main_bag_div_resumen_envio {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main_bag_div_resumen_total {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main_bag_div_resumen_total button {
+    width: 5%;
+    border: none;
+    border-radius: 0;
+    font-size: 70%;
+    justify-content: center;
+  }
+  .main_bag .carousel {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }
+  .main_bag .carousel-inner {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
