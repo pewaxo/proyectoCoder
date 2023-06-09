@@ -461,6 +461,16 @@ footer {
         font-size: 160%;
     }
 
+    .form-control {
+        text-align: center;
+        height: 30px;
+        transition: all 2s;
+    }
+    
+    .form-control:focus{
+        font-size: 20px;
+    }
+
     //news.html | Desktop min - 1024px
     .main_news {
         display: flex;
