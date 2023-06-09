@@ -154,11 +154,15 @@ footer {
   width: 100px;
   align-items: center;
   text-align: center;
+  transition: all 2s;
 }
 .main_shop_productos_shop_card a {
   background-color: #e7c6ff;
   border: solid;
   height: 35px;
+}
+.main_shop_productos_shop_card:hover {
+  width: 160px;
 }
 
 .main_subs {
@@ -172,6 +176,11 @@ footer {
 .form-control {
   text-align: center;
   height: 30px;
+  transition: all 2s;
+}
+
+.form-control:focus {
+  font-size: 20px;
 }
 
 .col-12 {

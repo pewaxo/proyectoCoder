@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una marca que brinda calidad y precios bajos con ofertas todo el año">
+    <meta name="keywords" content="MARCA, CALIDA, PROMOCIONES, OFERTAS">
     <title>Latin Trend</title>
 
     <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
@@ -22,10 +24,14 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!--ANIMACIONES CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!--ANIMACIONES AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--ANIMACIONES A:CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,7 +40,7 @@
     <!--Todo lo que vba a ver el usuario tenemos que ponerlo aqui dentro-->
     <!--Cabecera-->
     <header>
-        <div class="div_logo">
+        <div class="div_logo" data-aos="zoom-in">
             <a href="./index.html">
                 <img class="div_logo_img" src="./images/logo.jpeg" alt="logo 1">
             </a>
@@ -55,14 +61,16 @@
             <input class="buscador_redes_input" type="search" placeholder="Search">
             <button type="submit"><img src="./images/logo_buscador.png" alt=""></button>
             <a href="./pages/bag.html"><img class="buscador_redes_img" src="./images/icono_bag.png" alt="icono bag"></a>
-            <a href="./index.html"><img class="buscador_redes_img" src="./images/icono_facebook.png" alt="icono bag"></a>
-            <a href="./index.html"></script><img class="buscador_redes_img" src="./images/icono_instagram.png" alt="icono bag"></a>
+            <a href="./pages/about_us.html"><img class="buscador_redes_img" src="./images/icono_facebook.png"
+                    alt="icono bag"></a>
+            <a href="./index.html"></script><img class="buscador_redes_img" src="./images/icono_instagram.png"
+                    alt="icono bag"></a>
         </nav>
     </header>
 
     <!--Contenido principal-->
     <main class="main_index">
-        <section id="seccion_main">
+        <section id="seccion_main" data-aos="flip-left">
             <p><strong>Somos una marca que le da una segunda oportunidad a los articulos de segunda mano.</strong></p>
         </section>
     </main>
@@ -80,8 +88,8 @@
 
     <!--SCRIPT AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();</script>
 
+    <script> AOS.init();</script>
 </body>
 
 </html>
