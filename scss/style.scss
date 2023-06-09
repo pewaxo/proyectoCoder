@@ -441,6 +441,7 @@ footer {
             column-gap: 2%;
             row-gap: 35px;
             padding: 0;
+            transition: all 2s;
 
 
             &_card {
@@ -449,6 +450,10 @@ footer {
                 img {
                     height: 125px;
                 }
+            }
+
+            &_card:hover{
+                width: 160px;
             }
         }
     }
