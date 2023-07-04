@@ -1,0 +1,88 @@
+header {
+    display: grid;
+    grid-template-areas:
+        "logo navegacion"
+        "titulo titulo"
+        "buscador buscador";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50%;
+    padding: 5% 0% 5% 0%;
+    width: 100%;
+    height: 33%;
+    row-gap: 10px;
+
+    .div_logo {
+        grid-area: logo;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        &_img {
+            border-radius: 20%;
+            width: 125%;
+            height: 100px;
+        }
+    }
+
+    .barra_de_navegacion {
+        grid-area: navegacion;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5%;
+
+        &_btn_header {
+            border: none;
+            width: 30%;
+            font-size: 27px;
+        }
+    }
+
+    .titulo {
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .buscador_redes {
+        grid-area: buscador;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+        &_input {
+            width: 250px;
+            height: 30px;
+            text-align: center;
+            background-color: #e7c6ff;
+            border-style: groove;
+            font-size: 15;
+        }
+
+        &_img {
+            width: 30px;
+            border-radius: 10%;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            background-color: #e7c6ff;
+            border: none;
+            border-radius: 50%;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .btn {
+        height: 30px;
+    }
+}

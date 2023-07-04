@@ -4,7 +4,7 @@
   font-family: "Fjalla One", sans-serif;
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #e7c6ff;
-  color: white;
+  color: black;
 }
 
 header {
@@ -60,7 +60,7 @@ header .buscador_redes_input {
   text-align: center;
   background-color: #e7c6ff;
   border-style: groove;
-  font-size: 15;
+  font-size: 15px;
 }
 header .buscador_redes_img {
   width: 25px;
@@ -74,14 +74,14 @@ header .buscador_redes button {
   border-radius: 50%;
 }
 header .buscador_redes button img {
-  width: 20px;
+  width: 25px;
 }
 header .btn {
   height: 25px;
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 .main_index {
@@ -719,6 +719,9 @@ footer {
     width: 45%;
     height: 45%;
     border-radius: 20%;
+  }
+  .main_news_div_notice ul {
+    align-self: center;
   }
   .main_bag {
     display: flex;

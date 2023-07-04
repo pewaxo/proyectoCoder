@@ -1,0 +1,241 @@
+.main_index {
+    display: flex;
+    height: 73%;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+}
+
+//shop.html
+.main_shop {
+    display: grid;
+    grid-template-areas:
+        "opciones productos";
+    grid-template-columns: 20% 80%;
+    padding: 3.5%;
+
+    &_opciones_shop {
+        grid-area: opciones;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+
+        &_criterios {
+            padding: 2%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        li {
+            font-size: 18px;
+        }
+
+        &_div_adicionales_shop {
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            row-gap: 25px;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+
+            &_card {
+
+                a {
+                    background-color: #e7c6ff;
+                    border: solid;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    img {
+        border-radius: 13%;
+    }
+
+    &_productos_shop {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+        row-gap: 35px;
+        column-gap: 25px;
+
+        &_card {
+            width: 100px;
+            align-items: center;
+            text-align: center;
+
+            a {
+                background-color: #e7c6ff;
+                border: solid;
+                height: 35px;
+            }
+        }
+    }
+}
+
+//subscribe.html
+.main_subs {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5% 5% 3% 5%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer_subs {
+    display: none;
+}
+
+.form-control {
+    text-align: center;
+    height: 37px;
+    transition: all 2s;
+}
+
+.col-12 {
+    display: flex;
+    font-size: 23px;
+    justify-content: space-around;
+    padding: auto;
+
+    button {
+        background-color: #e7c6ff;
+        font-size: 20px;
+        padding: 1%;
+        border: solid;
+        border-radius: 10%;
+        width: 70px;
+    }
+}
+
+//news.html
+.main_news {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    row-gap: 10px;
+
+    &_div_notice {
+        display: flex;
+        column-gap: 33px;
+
+        section {
+            display: flex;
+        }
+
+        &_img_notice {
+            display: flex;
+            align-self: center;
+            width: 30%;
+            height: 150px;
+            border-radius: 5%;
+            ;
+        }
+    }
+}
+
+//bag.html
+.main_bag {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    row-gap: 7px;
+
+
+    &_div_item {
+        display: grid;
+        grid-template-areas:
+            "imagen descripcion total";
+
+        grid-template-columns: 15% 60% 25%;
+
+        &_img {
+            grid-area: imagen;
+            display: flex;
+            justify-content: center;
+            padding: 5%;
+        }
+
+        &_descripcion {
+            grid-area: descripcion;
+            display: block;
+            font-size: 18px;
+        }
+
+        &_total {
+            grid-area: total;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                border: none;
+            }
+        }
+    }
+
+    .carousel {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    &_div_resumen {
+        padding-bottom: 5%;
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &_cantidad {
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+
+        &_envio {
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+
+        &_total {
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+
+            button {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 5%;
+                border: none;
+                border-radius: 0;
+                font-size: 80%;
+                justify-content: center;
+            }
+        }
+    }
+
+    div img {
+        width: 90%;
+        border-radius: 20%;
+    }
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.carousel-item img {
+    height: 200px;
+}
