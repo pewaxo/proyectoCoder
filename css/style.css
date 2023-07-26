@@ -566,34 +566,31 @@ footer {
   header {
     display: grid;
     grid-template-areas: "logo navegacion" "titulo titulo" "buscador buscador";
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 50%;
-    padding: 5% 0% 5% 0%;
-    width: 100%;
+    padding: 3% 0% 3% 0%;
     height: 33%;
-    row-gap: 10px;
+    row-gap: 0;
   }
   header .div_logo {
     grid-area: logo;
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
   }
   header .div_logo_img {
-    border-radius: 20%;
-    width: 110%;
-    height: 110px;
+    border-radius: 10%;
+    width: 100%;
   }
   header .barra_de_navegacion {
     grid-area: navegacion;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    padding: 1%;
   }
   header .barra_de_navegacion_btn_header {
     border: none;
-    width: 30%;
+    width: 20%;
     font-size: 30px;
   }
   header .titulo {
@@ -603,12 +600,15 @@ footer {
     align-self: center;
     width: 100%;
   }
+  header .titulo h1 {
+    font-size: 45px;
+  }
   header .buscador_redes {
     grid-area: buscador;
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   header .buscador_redes_input {
     width: 300px;
@@ -637,9 +637,11 @@ footer {
   }
   .main_index {
     display: flex;
-    height: 73%;
     text-align: center;
-    padding: 0% 0% 3% 0%;
+    padding: 2% 0% 2% 0%;
+  }
+  .main_index img {
+    width: 100%;
   }
   footer {
     font-size: 20px;
@@ -782,6 +784,79 @@ footer {
   }
   .main_bag .carousel-inner {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    padding: 2% 0% 2% 0%;
+  }
+  header .div_logo {
+    display: flex;
+    width: 30%;
+    padding: 1%;
+  }
+  header .div_logo img {
+    height: 100%;
+  }
+  header .barra_de_navegacion {
+    display: flex;
+    padding: 0%;
+    column-gap: 5%;
+    justify-content: space-between;
+  }
+  header .barra_de_navegacion button {
+    width: 60%;
+    font-size: 35px;
+  }
+  header .titulo h1 {
+    font-size: 55px;
+  }
+  header .buscador_redes {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+  }
+  header .buscador_redes_input {
+    width: 300px;
+    height: 40px;
+    text-align: right;
+    background-color: #e7c6ff;
+    border-style: groove;
+    font-size: 25px;
+  }
+  header .buscador_redes_img {
+    width: 40px;
+    border-radius: 10%;
+  }
+  header .buscador_redes button {
+    display: flex;
+    align-items: center;
+    background-color: #e7c6ff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+  }
+  header .buscador_redes button img {
+    width: 40px;
+  }
+  .main_index {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 14%;
+    width: 100%;
+    height: 100%;
+  }
+  .main_index img {
+    width: 25%;
+  }
+  .main_shop {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    font-size: 25px;
   }
 }
 

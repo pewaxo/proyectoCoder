@@ -16,3 +16,8 @@
     @import "../scss/header_desktop";
     @import "../scss/body_desktop";
 }
+
+@media screen and (min-width: 1200px) {
+    @import "../scss/header_desktop_1200px";
+    @import "../scss/body_desktop_1200px";
+}

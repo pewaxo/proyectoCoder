@@ -1,0 +1,67 @@
+header{
+    display: flex;
+    padding: 2% 0% 2% 0%;
+
+    .div_logo {
+        display: flex;
+        width: 30%;
+        padding: 1%;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .barra_de_navegacion{
+        display: flex;
+        padding: 0%;
+        column-gap: 5%;
+        justify-content: space-between;
+
+        button{
+            width: 60%;
+            font-size: 35px;
+        }
+    }
+
+    .titulo{
+        h1{
+            font-size: 55px;
+        }
+    }
+
+    .buscador_redes{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-evenly;
+
+        &_input {
+            width: 300px;
+            height: 40px;
+            text-align: right;
+            background-color: $secundario;
+            border-style: groove;
+            font-size: 25px;
+        }
+        
+        &_img {
+            width: 40px;
+            border-radius: 10%;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            background-color: $secundario;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+
+}

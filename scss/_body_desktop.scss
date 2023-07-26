@@ -1,8 +1,11 @@
 .main_index {
     display: flex;
-    height: 73%;
     text-align: center;
-    padding: 0% 0% 3% 0%;
+    padding: 2% 0% 2% 0%;
+
+    img{
+        width: 100%;
+    }
 }
 
 footer {
