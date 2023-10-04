@@ -789,11 +789,11 @@ footer {
 @media screen and (min-width: 1200px) {
   header {
     display: flex;
-    padding: 2% 0% 2% 0%;
+    padding: 2% 10% 2% 10%;
   }
   header .div_logo {
     display: flex;
-    width: 30%;
+    width: 50%;
     padding: 1%;
   }
   header .div_logo img {
@@ -801,33 +801,34 @@ footer {
   }
   header .barra_de_navegacion {
     display: flex;
-    padding: 0%;
+    padding: 1%;
     column-gap: 5%;
     justify-content: space-between;
   }
   header .barra_de_navegacion button {
     width: 60%;
-    font-size: 35px;
+    font-size: 200%;
   }
   header .titulo h1 {
-    font-size: 55px;
+    font-size: 300%;
   }
   header .buscador_redes {
     display: flex;
     flex-direction: row;
     align-self: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   header .buscador_redes_input {
-    width: 300px;
-    height: 40px;
+    width: 200px;
+    height: 35px;
     text-align: right;
     background-color: #e7c6ff;
     border-style: groove;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: left;
   }
   header .buscador_redes_img {
-    width: 40px;
+    width: 35px;
     border-radius: 10%;
   }
   header .buscador_redes button {
@@ -836,15 +837,15 @@ footer {
     background-color: #e7c6ff;
     border: none;
     border-radius: 50%;
-    width: 40px;
+    width: 25px;
   }
   header .buscador_redes button img {
-    width: 40px;
+    width: 35px;
   }
   .main_index {
     display: flex;
     flex-direction: row;
-    padding-bottom: 14%;
+    padding: 5% 0% 15% 0%;
     width: 100%;
     height: 100%;
   }
@@ -854,6 +855,7 @@ footer {
   .main_shop {
     display: flex;
     flex-direction: row;
+    padding: 5% 0% 0%;
   }
   footer {
     font-size: 25px;
